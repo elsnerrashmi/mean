@@ -1,0 +1,23 @@
+<div class="col-md-8 col-md-offset-2">
+    <form [formGroup]="signupform" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" class="form-control" formControlName="firstname">
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" class="form-control" formControlName="lastname">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" formControlName="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" formControlName="password">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" [disabled]="!signupform.valid" >Submit</button>
+        </div>
+    </form>
+</div>

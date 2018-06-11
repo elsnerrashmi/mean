@@ -1,0 +1,11 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+            <input type="text" required placeholder="Enter something here.!" class="form-control" [ngModel]="message?.content" name="content"
+                   id="text" >
+        </div>
+        <button class="btn btn-danger" type="button" (click)="onClear(f)">Clear</button>
+        <button class="btn btn-primary" type="submit">submit</button>
+    </form>
+</div>
+<hr>

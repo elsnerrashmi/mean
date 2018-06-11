@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="panel panel-default">
+
+        <div class="panel-body">
+            {{message.content}}
+
+        </div>
+        <footer class="panel-footer">
+            {{message.username}}
+            <a (click)="onDelete()" class="pull-right">Delete</a>
+
+            <a (click)="onEdit()" class="pull-right">Edit  &nbsp;&nbsp;</a>
+
+        </footer>
+    </div>
+</div>
