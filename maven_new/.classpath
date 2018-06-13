@@ -32,5 +32,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/corepractice/Library/selenium-java-2.44.0.jar"/>
+	<classpathentry kind="lib" path="/corepractice/Library/selenium-server-standalone-2.44.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
