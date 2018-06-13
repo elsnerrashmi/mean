@@ -17,7 +17,14 @@ public class my_test {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 driver.get("https://test.corepractice.is/#/");
+		 driver.get("http://magento-demo.lexiconn.com/customer/account/create/");
+		 driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys("rashmi");
+		 driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys("jain");
+		 driver.findElement(By.xpath("//input[@id='email_address']")).sendKeys("rashmi@xhtmljunkies.com");
+		 driver.findElement(By.xpath("//input[@id='password']")).sendKeys("123456");
+		 driver.findElement(By.xpath("//input[@id='confirmation']")).sendKeys("123456");
+		 driver.findElement(By.xpath("//button[@title='Register']")).click();
+		 
 //		    driver.findElement(By.id("Password")).clear();
 //		    driver.findElement(By.id("Password")).sendKeys("ShahElsner2018");
 //		    driver.findElement(By.id("Username")).clear();
