@@ -15,15 +15,19 @@ public class my_test {
 		
 		System.out.println("hellloo.......");
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("test-type");
-		chromeOptions.addArguments("start-maximized");
-		chromeOptions.addArguments("--disable-extensions");
-		chromeOptions.addArguments("no-sandbox");
-
-		driver = new ChromeDriver(chromeOptions);
+	//	System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
+//		ChromeOptions chromeOptions = new ChromeOptions();
+//		chromeOptions.addArguments("test-type");
+//		chromeOptions.addArguments("start-maximized");
+//		chromeOptions.addArguments("--disable-extensions");
+//		chromeOptions.addArguments("no-sandbox");
+//
+//		driver = new ChromeDriver(chromeOptions);
+		driver = new ChromeDriver();
+		System.out.println("Open");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.out.println("send URL");
 		 driver.get("http://magento-demo.lexiconn.com/customer/account/create/");
 		 driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys("rashmi");
 		 driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys("jain");
