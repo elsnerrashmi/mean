@@ -14,7 +14,7 @@ public class my_test {
 	public static void main(String[] args) throws InterruptedException {
 		
 		System.out.println("hellloo.......");
-		System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("test-type");
 		chromeOptions.addArguments("start-maximized");
