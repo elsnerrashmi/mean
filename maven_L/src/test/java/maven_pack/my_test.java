@@ -15,12 +15,12 @@ public class my_test {
 		
 		System.out.println("hellloo.......");
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-	//	System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
-//		ChromeOptions chromeOptions = new ChromeOptions();
+		//System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
+		ChromeOptions chromeOptions = new ChromeOptions();
 //		chromeOptions.addArguments("test-type");
 //		chromeOptions.addArguments("start-maximized");
 //		chromeOptions.addArguments("--disable-extensions");
-//		chromeOptions.addArguments("no-sandbox");
+		chromeOptions.addArguments("no-sandbox");
 //
 //		driver = new ChromeDriver(chromeOptions);
 		driver = new ChromeDriver();
