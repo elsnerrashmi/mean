@@ -36,9 +36,9 @@ app.use('/auth', authRoutes);
 app.use('/', appRoutes);
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
-    return res.render('index');
-});
+// app.use(function (req, res, next) {
+//     return res.render('index');
+// });
 
 
 module.exports = app;
