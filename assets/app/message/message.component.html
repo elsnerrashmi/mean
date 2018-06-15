@@ -7,10 +7,11 @@
         </div>
         <footer class="panel-footer">
             {{message.username}}
-            <a (click)="onDelete()" class="pull-right">Delete</a>
+            <div class="pull-right" *ngIf="isBelongsToUser()">
+                <a (click)="onEdit()" >Edit  &nbsp;&nbsp;</a>
+                <a (click)="onDelete()" >Delete</a>
 
-            <a (click)="onEdit()" class="pull-right">Edit  &nbsp;&nbsp;</a>
-
+            </div>
         </footer>
     </div>
 </div>
