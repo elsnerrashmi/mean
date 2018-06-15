@@ -27,7 +27,7 @@ public class my_test {
 		 driver.get("http://magento-demo.lexiconn.com/customer/account/create/");
 		 driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys("rashmi");
 		 driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys("jain");
-		 driver.findElement(By.xpath("//input[@id='email_address']")).sendKeys("rashmi1@xhtmljunkies.com");
+		 driver.findElement(By.xpath("//input[@id='email_address']")).sendKeys("rashmi2@xhtmljunkies.com");
 		 driver.findElement(By.xpath("//input[@id='password']")).sendKeys("123456");
 		 driver.findElement(By.xpath("//input[@id='confirmation']")).sendKeys("123456");
 		 driver.findElement(By.xpath("//button[@title='Register']")).click();
