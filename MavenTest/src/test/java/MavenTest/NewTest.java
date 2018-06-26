@@ -12,20 +12,21 @@ import org.testng.annotations.AfterTest;
 
 public class NewTest {
 	static WebDriver driver;
-  @Test
+  @Test(priority = 1)
   public void OpenBrowser() {
 	  driver.get("http://localhost:8292/auth/signin");
-  }
-  @Test
-  public void LoginWithWrong() throws Exception {
 	  driver.findElement(By.xpath("//input[@id='email']")).sendKeys("test@xhtmljunkies.com");
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("1234567");
 		driver.findElement(By.xpath("//button[contains(.,'Submit')]")).click();
-		  System.out.println("Login Validition Error: "+driver.findElement(By.xpath("//p[contains(.,'Credentials do not match with our records.')]")).getText());
-			driver.findElement(By.xpath("//button[contains(.,'Close')]")).click();
+  }
+  @Test(priority = 2)
+  public void ValiditionError() throws Exception {
+	  	Thread.sleep(2000);
+		System.out.println("Login Validition Error: "+driver.findElement(By.xpath("//p[contains(.,'Credentials do not match with our records.')]")).getText());
+		driver.findElement(By.xpath("//button[contains(.,'Close')]")).click();
 
   }
-   @Test
+   @Test(priority = 3)
   public void LoginSuccessfully() {
 	  driver.get("http://localhost:8292/auth/signin");
 		System.out.println("Login with : sagar@xhtmljunkies.com");
