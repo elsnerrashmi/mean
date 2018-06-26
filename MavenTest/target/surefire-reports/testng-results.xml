@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="13028" started-at="2018-06-26T09:56:45Z" finished-at="2018-06-26T09:56:58Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="13028" started-at="2018-06-26T09:56:45Z" finished-at="2018-06-26T09:56:58Z">
+      <class name="MavenTest.NewTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:MavenTest.NewTest@6276ae34]" name="beforeTest" is-config="true" duration-ms="5929" started-at="2018-06-26T15:26:45Z" finished-at="2018-06-26T15:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="LoginSuccessfully()[pri:0, instance:MavenTest.NewTest@6276ae34]" name="LoginSuccessfully" duration-ms="4281" started-at="2018-06-26T15:26:51Z" finished-at="2018-06-26T15:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccessfully -->
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:MavenTest.NewTest@6276ae34]" name="OpenBrowser" duration-ms="1809" started-at="2018-06-26T15:26:55Z" finished-at="2018-06-26T15:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:MavenTest.NewTest@6276ae34]" name="afterTest" is-config="true" duration-ms="998" started-at="2018-06-26T15:26:57Z" finished-at="2018-06-26T15:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- MavenTest.NewTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
