@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,6 +108,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="MavenTest.NewTest" hash-for-method="OpenBrowser">OpenBrowser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="MavenTest.NewTest" hash-for-method="ValiditionError">ValiditionError</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -140,6 +145,13 @@
                   <a name="OpenBrowser">
                   </a> <!-- OpenBrowser -->
                   <span class="method-name">OpenBrowser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValiditionError">
+                  </a> <!-- ValiditionError -->
+                  <span class="method-name">ValiditionError</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,20 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginSuccessfully')
+data.setCell(0, 1, 'OpenBrowser')
 data.setCell(0, 2, 'MavenTest.NewTest')
-data.setCell(0, 3, 4281);
+data.setCell(0, 3, 3974);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'OpenBrowser')
+data.setCell(1, 1, 'LoginSuccessfully')
 data.setCell(1, 2, 'MavenTest.NewTest')
-data.setCell(1, 3, 1809);
+data.setCell(1, 3, 2340);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ValiditionError')
+data.setCell(2, 2, 'MavenTest.NewTest')
+data.setCell(2, 3, 2178);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -241,16 +257,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">LoginSuccessfully</span>
-                <span class="method-start">5938 ms</span>
+                <span class="method-name">OpenBrowser</span>
+                <span class="method-start">6455 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">OpenBrowser</span>
-                <span class="method-start">10219 ms</span>
+                <span class="method-name">ValiditionError</span>
+                <span class="method-start">10429 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginSuccessfully</span>
+                <span class="method-start">12608 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">12029 ms</span>
+                <span class="method-start">14949 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

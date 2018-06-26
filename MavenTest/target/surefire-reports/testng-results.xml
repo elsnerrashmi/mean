@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13028" started-at="2018-06-26T09:56:45Z" finished-at="2018-06-26T09:56:58Z">
+  <suite name="Suite" duration-ms="15836" started-at="2018-06-26T11:45:01Z" finished-at="2018-06-26T11:45:17Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="13028" started-at="2018-06-26T09:56:45Z" finished-at="2018-06-26T09:56:58Z">
+    <test name="Test" duration-ms="15836" started-at="2018-06-26T11:45:01Z" finished-at="2018-06-26T11:45:17Z">
       <class name="MavenTest.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:MavenTest.NewTest@6276ae34]" name="beforeTest" is-config="true" duration-ms="5929" started-at="2018-06-26T15:26:45Z" finished-at="2018-06-26T15:26:51Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:MavenTest.NewTest@6276ae34]" name="beforeTest" is-config="true" duration-ms="6448" started-at="2018-06-26T17:15:01Z" finished-at="2018-06-26T17:15:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="LoginSuccessfully()[pri:0, instance:MavenTest.NewTest@6276ae34]" name="LoginSuccessfully" duration-ms="4281" started-at="2018-06-26T15:26:51Z" finished-at="2018-06-26T15:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginSuccessfully -->
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:MavenTest.NewTest@6276ae34]" name="OpenBrowser" duration-ms="1809" started-at="2018-06-26T15:26:55Z" finished-at="2018-06-26T15:26:57Z">
+        <test-method status="PASS" signature="OpenBrowser()[pri:1, instance:MavenTest.NewTest@6276ae34]" name="OpenBrowser" duration-ms="3974" started-at="2018-06-26T17:15:08Z" finished-at="2018-06-26T17:15:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:MavenTest.NewTest@6276ae34]" name="afterTest" is-config="true" duration-ms="998" started-at="2018-06-26T15:26:57Z" finished-at="2018-06-26T15:26:58Z">
+        <test-method status="PASS" signature="ValiditionError()[pri:2, instance:MavenTest.NewTest@6276ae34]" name="ValiditionError" duration-ms="2178" started-at="2018-06-26T17:15:11Z" finished-at="2018-06-26T17:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValiditionError -->
+        <test-method status="PASS" signature="LoginSuccessfully()[pri:3, instance:MavenTest.NewTest@6276ae34]" name="LoginSuccessfully" duration-ms="2340" started-at="2018-06-26T17:15:14Z" finished-at="2018-06-26T17:15:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccessfully -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:MavenTest.NewTest@6276ae34]" name="afterTest" is-config="true" duration-ms="886" started-at="2018-06-26T17:15:16Z" finished-at="2018-06-26T17:15:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
