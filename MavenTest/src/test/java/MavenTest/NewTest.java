@@ -7,12 +7,14 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 
 public class NewTest {
-	JavascriptExecutor js = (JavascriptExecutor) driver;  
+	JavascriptExecutor jse = (JavascriptExecutor)driver;
 	static WebDriver driver;
 	@Test(priority = 1)
 	public void OpenURL() {
@@ -30,6 +32,9 @@ public class NewTest {
 	@Test(priority = 3)
 	public void LoginWithValidData() {
 		System.out.println("Login With Valid Data");
+		driver.findElement(By.id("email")).click();
+		driver.findElement(By.id("email")).clear();
+		driver.findElement(By.id("email")).sendKeys("sagar@xhtmljunkies.com");
 		driver.findElement(By.id("pass")).click();
 		driver.findElement(By.id("pass")).clear();
 		driver.findElement(By.id("pass")).sendKeys("123456");
@@ -53,39 +58,45 @@ public class NewTest {
 	@Test(priority = 7)
 	public void AddProductToWishlist() {
 		driver.get("http://magento-demo.lexiconn.com/accessories/eyewear.html");
-		js.executeScript("window.scrollBy(0,1000)");
 		System.out.println("Add Product To Wishlist");
-		driver.findElement(By.linkText("Accessories")).click();
-		driver.findElement(By.xpath("//img[@alt='Eyewear']")).click();
-		driver.findElement(By.linkText("Add to Wishlist")).click();
-		driver.switchTo().alert().accept();
+		driver.findElement(By.xpath("//a[@class='link-wishlist']")).click();
 	}
 	@Test(priority = 8)
 	public void RemoveFromWishlist() {
 		System.out.println("Remove From Wishlist");
-		driver.findElement(By.linkText("Remove item")).click();
+		driver.findElement(By.xpath("//a[@title='Remove Item']")).click();
 		driver.switchTo().alert().accept();
 	}
 	@Test(priority = 9)
 	public void AddToCompare() {
 		System.out.println("Add To Compare");
-		driver.findElement(By.linkText("Accessories")).click();
-		driver.findElement(By.xpath("//img[@alt='Eyewear']")).click();
+		driver.get("http://magento-demo.lexiconn.com/accessories/eyewear.html");
 		driver.findElement(By.linkText("Add to Compare")).click();
-		driver.findElement(By.linkText("Sale")).click();
+		driver.get("http://magento-demo.lexiconn.com/sale.html");
 		driver.findElement(By.linkText("Add to Compare")).click();
 	}
 	@Test(priority = 10)
-	public void CheckCompare() {
+	public void CheckCompare() throws Exception {
 		System.out.println("Check Compare");
-		driver.findElement(By.xpath("//html[@id='top']/body/div/div[2]/div[2]/div/div[3]/div/div[2]/div/button/span/span")).click();
-		driver.findElement(By.xpath("//html[@id='top']/body/div/div[2]/button/span/span")).click();
-		driver.close();
-	}
+		Thread.sleep(5000);
+		String parentHandle = driver.getWindowHandle(); // get the current window handle
+		driver.findElement(By.xpath("//button[@title='Compare']")).click(); // click some link that opens a new window
+
+		for (String winHandle : driver.getWindowHandles()) {
+			Thread.sleep(5000);
+		    driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+		}
+
+		//code to do something on new window
+
+		driver.close(); // close newly opened window when done with it
+		driver.switchTo().window(parentHandle); // switch back to the original window
+		}
 	@Test(priority = 11)
-	public void CheckMyAccount() {
+	public void CheckMyAccount() throws Exception {
 		System.out.println("Check My Account");
 		driver.findElement(By.xpath("//header[@id='header']/div/div[2]/a[3]/span[2]")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.linkText("My Account")).click();
 	}
 	@Test(priority = 12)

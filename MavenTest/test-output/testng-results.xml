@@ -1,177 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="4" passed="2">
+<testng-results skipped="0" failed="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="32392" started-at="2018-06-26T09:32:41Z" finished-at="2018-06-26T09:33:14Z">
+  <suite name="Default suite" duration-ms="62247" started-at="2018-06-28T07:39:17Z" finished-at="2018-06-28T07:40:20Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="32392" started-at="2018-06-26T09:32:41Z" finished-at="2018-06-26T09:33:14Z">
+    <test name="Default test" duration-ms="62247" started-at="2018-06-28T07:39:17Z" finished-at="2018-06-28T07:40:20Z">
       <class name="MavenTest.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:MavenTest.NewTest@42e26948]" name="beforeTest" is-config="true" duration-ms="5400" started-at="2018-06-26T15:02:41Z" finished-at="2018-06-26T15:02:47Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:MavenTest.NewTest@57baeedf]" name="beforeTest" is-config="true" duration-ms="4686" started-at="2018-06-28T13:09:17Z" finished-at="2018-06-28T13:09:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="LoginSuccessfully()[pri:0, instance:MavenTest.NewTest@42e26948]" name="LoginSuccessfully" duration-ms="4594" started-at="2018-06-26T15:02:47Z" finished-at="2018-06-26T15:02:51Z">
+        <test-method status="PASS" signature="OpenURL()[pri:1, instance:MavenTest.NewTest@57baeedf]" name="OpenURL" duration-ms="3860" started-at="2018-06-28T13:09:22Z" finished-at="2018-06-28T13:09:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginSuccessfully -->
-        <test-method status="FAIL" signature="LoginWithWrong()[pri:0, instance:MavenTest.NewTest@42e26948]" name="LoginWithWrong" duration-ms="10083" started-at="2018-06-26T15:02:51Z" finished-at="2018-06-26T15:03:01Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='email']"}
-  (Session info: chrome=67.0.3396.87)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-UU6ILCO', ip: '192.168.1.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\nteam\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
-Session ID: 41f8f2c7614d4bc7722495e15de1ca56
-*** Element info: {Using=xpath, value=//input[@id='email']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='email']"}
-  (Session info: chrome=67.0.3396.87)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-UU6ILCO', ip: '192.168.1.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\nteam\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
-Session ID: 41f8f2c7614d4bc7722495e15de1ca56
-*** Element info: {Using=xpath, value=//input[@id='email']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at MavenTest.NewTest.LoginWithWrong(NewTest.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- OpenURL -->
+        <test-method status="PASS" signature="LoginWithInvalidData()[pri:2, instance:MavenTest.NewTest@57baeedf]" name="LoginWithInvalidData" duration-ms="3112" started-at="2018-06-28T13:09:26Z" finished-at="2018-06-28T13:09:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithWrong -->
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:MavenTest.NewTest@42e26948]" name="OpenBrowser" duration-ms="1398" started-at="2018-06-26T15:03:01Z" finished-at="2018-06-26T15:03:03Z">
+        </test-method> <!-- LoginWithInvalidData -->
+        <test-method status="PASS" signature="LoginWithValidData()[pri:3, instance:MavenTest.NewTest@57baeedf]" name="LoginWithValidData" duration-ms="2830" started-at="2018-06-28T13:09:29Z" finished-at="2018-06-28T13:09:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method status="FAIL" signature="ValiditionError()[pri:0, instance:MavenTest.NewTest@42e26948]" name="ValiditionError" duration-ms="10061" started-at="2018-06-26T15:03:03Z" finished-at="2018-06-26T15:03:13Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(.,'Credentials do not match with our records.')]"}
-  (Session info: chrome=67.0.3396.87)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-UU6ILCO', ip: '192.168.1.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\nteam\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
-Session ID: 41f8f2c7614d4bc7722495e15de1ca56
-*** Element info: {Using=xpath, value=//p[contains(.,'Credentials do not match with our records.')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(.,'Credentials do not match with our records.')]"}
-  (Session info: chrome=67.0.3396.87)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-UU6ILCO', ip: '192.168.1.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\nteam\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
-Session ID: 41f8f2c7614d4bc7722495e15de1ca56
-*** Element info: {Using=xpath, value=//p[contains(.,'Credentials do not match with our records.')]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at MavenTest.NewTest.ValiditionError(NewTest.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- LoginWithValidData -->
+        <test-method status="PASS" signature="OpenCategory()[pri:4, instance:MavenTest.NewTest@57baeedf]" name="OpenCategory" duration-ms="1831" started-at="2018-06-28T13:09:32Z" finished-at="2018-06-28T13:09:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValiditionError -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:MavenTest.NewTest@42e26948]" name="afterTest" is-config="true" duration-ms="777" started-at="2018-06-26T15:03:13Z" finished-at="2018-06-26T15:03:14Z">
+        </test-method> <!-- OpenCategory -->
+        <test-method status="PASS" signature="AddProductInCart()[pri:5, instance:MavenTest.NewTest@57baeedf]" name="AddProductInCart" duration-ms="7921" started-at="2018-06-28T13:09:34Z" finished-at="2018-06-28T13:09:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductInCart -->
+        <test-method status="PASS" signature="RemoveProductFromCart()[pri:6, instance:MavenTest.NewTest@57baeedf]" name="RemoveProductFromCart" duration-ms="2468" started-at="2018-06-28T13:09:42Z" finished-at="2018-06-28T13:09:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveProductFromCart -->
+        <test-method status="PASS" signature="AddProductToWishlist()[pri:7, instance:MavenTest.NewTest@57baeedf]" name="AddProductToWishlist" duration-ms="4488" started-at="2018-06-28T13:09:44Z" finished-at="2018-06-28T13:09:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToWishlist -->
+        <test-method status="PASS" signature="RemoveFromWishlist()[pri:8, instance:MavenTest.NewTest@57baeedf]" name="RemoveFromWishlist" duration-ms="161" started-at="2018-06-28T13:09:49Z" finished-at="2018-06-28T13:09:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveFromWishlist -->
+        <test-method status="PASS" signature="AddToCompare()[pri:9, instance:MavenTest.NewTest@57baeedf]" name="AddToCompare" duration-ms="7197" started-at="2018-06-28T13:09:49Z" finished-at="2018-06-28T13:09:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCompare -->
+        <test-method status="PASS" signature="CheckCompare()[pri:10, instance:MavenTest.NewTest@57baeedf]" name="CheckCompare" duration-ms="15403" started-at="2018-06-28T13:09:56Z" finished-at="2018-06-28T13:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckCompare -->
+        <test-method status="PASS" signature="CheckMyAccount()[pri:11, instance:MavenTest.NewTest@57baeedf]" name="CheckMyAccount" duration-ms="3579" started-at="2018-06-28T13:10:11Z" finished-at="2018-06-28T13:10:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckMyAccount -->
+        <test-method status="PASS" signature="RemoveFromCompare()[pri:12, instance:MavenTest.NewTest@57baeedf]" name="RemoveFromCompare" duration-ms="165" started-at="2018-06-28T13:10:15Z" finished-at="2018-06-28T13:10:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveFromCompare -->
+        <test-method status="PASS" signature="LogOut()[pri:13, instance:MavenTest.NewTest@57baeedf]" name="LogOut" duration-ms="3578" started-at="2018-06-28T13:10:15Z" finished-at="2018-06-28T13:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:MavenTest.NewTest@57baeedf]" name="afterTest" is-config="true" duration-ms="879" started-at="2018-06-28T13:10:19Z" finished-at="2018-06-28T13:10:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- MavenTest.NewTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

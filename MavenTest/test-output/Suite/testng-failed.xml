@@ -10,9 +10,12 @@
     <classes>
       <class name="MavenTest.NewTest">
         <methods>
+          <include name="RemoveFromWishlist"/>
+          <include name="CheckCompare"/>
+          <include name="AddToCompare"/>
           <include name="beforeTest"/>
-          <include name="LoginWithWrong"/>
-          <include name="ValiditionError"/>
+          <include name="AddProductToWishlist"/>
+          <include name="RemoveFromCompare"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- MavenTest.NewTest -->
