@@ -2,68 +2,68 @@
 <testng-results skipped="0" failed="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="62247" started-at="2018-06-28T07:39:17Z" finished-at="2018-06-28T07:40:20Z">
+  <suite name="Default suite" duration-ms="65972" started-at="2018-06-29T10:25:07Z" finished-at="2018-06-29T10:26:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="62247" started-at="2018-06-28T07:39:17Z" finished-at="2018-06-28T07:40:20Z">
+    <test name="Default test" duration-ms="65972" started-at="2018-06-29T10:25:07Z" finished-at="2018-06-29T10:26:13Z">
       <class name="MavenTest.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:MavenTest.NewTest@57baeedf]" name="beforeTest" is-config="true" duration-ms="4686" started-at="2018-06-28T13:09:17Z" finished-at="2018-06-28T13:09:22Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:MavenTest.NewTest@57baeedf]" name="beforeTest" is-config="true" duration-ms="4922" started-at="2018-06-29T15:55:07Z" finished-at="2018-06-29T15:55:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="OpenURL()[pri:1, instance:MavenTest.NewTest@57baeedf]" name="OpenURL" duration-ms="3860" started-at="2018-06-28T13:09:22Z" finished-at="2018-06-28T13:09:26Z">
+        <test-method status="PASS" signature="OpenURL()[pri:1, instance:MavenTest.NewTest@57baeedf]" name="OpenURL" duration-ms="4040" started-at="2018-06-29T15:55:12Z" finished-at="2018-06-29T15:55:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenURL -->
-        <test-method status="PASS" signature="LoginWithInvalidData()[pri:2, instance:MavenTest.NewTest@57baeedf]" name="LoginWithInvalidData" duration-ms="3112" started-at="2018-06-28T13:09:26Z" finished-at="2018-06-28T13:09:29Z">
+        <test-method status="PASS" signature="LoginWithInvalidData()[pri:2, instance:MavenTest.NewTest@57baeedf]" name="LoginWithInvalidData" duration-ms="3127" started-at="2018-06-29T15:55:16Z" finished-at="2018-06-29T15:55:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithInvalidData -->
-        <test-method status="PASS" signature="LoginWithValidData()[pri:3, instance:MavenTest.NewTest@57baeedf]" name="LoginWithValidData" duration-ms="2830" started-at="2018-06-28T13:09:29Z" finished-at="2018-06-28T13:09:32Z">
+        <test-method status="PASS" signature="LoginWithValidData()[pri:3, instance:MavenTest.NewTest@57baeedf]" name="LoginWithValidData" duration-ms="3752" started-at="2018-06-29T15:55:20Z" finished-at="2018-06-29T15:55:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithValidData -->
-        <test-method status="PASS" signature="OpenCategory()[pri:4, instance:MavenTest.NewTest@57baeedf]" name="OpenCategory" duration-ms="1831" started-at="2018-06-28T13:09:32Z" finished-at="2018-06-28T13:09:34Z">
+        <test-method status="PASS" signature="OpenCategory()[pri:4, instance:MavenTest.NewTest@57baeedf]" name="OpenCategory" duration-ms="1655" started-at="2018-06-29T15:55:23Z" finished-at="2018-06-29T15:55:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenCategory -->
-        <test-method status="PASS" signature="AddProductInCart()[pri:5, instance:MavenTest.NewTest@57baeedf]" name="AddProductInCart" duration-ms="7921" started-at="2018-06-28T13:09:34Z" finished-at="2018-06-28T13:09:42Z">
+        <test-method status="PASS" signature="AddProductInCart()[pri:5, instance:MavenTest.NewTest@57baeedf]" name="AddProductInCart" duration-ms="3284" started-at="2018-06-29T15:55:25Z" finished-at="2018-06-29T15:55:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductInCart -->
-        <test-method status="PASS" signature="RemoveProductFromCart()[pri:6, instance:MavenTest.NewTest@57baeedf]" name="RemoveProductFromCart" duration-ms="2468" started-at="2018-06-28T13:09:42Z" finished-at="2018-06-28T13:09:44Z">
+        <test-method status="PASS" signature="RemoveProductFromCart()[pri:6, instance:MavenTest.NewTest@57baeedf]" name="RemoveProductFromCart" duration-ms="2185" started-at="2018-06-29T15:55:28Z" finished-at="2018-06-29T15:55:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveProductFromCart -->
-        <test-method status="PASS" signature="AddProductToWishlist()[pri:7, instance:MavenTest.NewTest@57baeedf]" name="AddProductToWishlist" duration-ms="4488" started-at="2018-06-28T13:09:44Z" finished-at="2018-06-28T13:09:49Z">
+        <test-method status="PASS" signature="AddProductToWishlist()[pri:7, instance:MavenTest.NewTest@57baeedf]" name="AddProductToWishlist" duration-ms="3174" started-at="2018-06-29T15:55:30Z" finished-at="2018-06-29T15:55:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductToWishlist -->
-        <test-method status="PASS" signature="RemoveFromWishlist()[pri:8, instance:MavenTest.NewTest@57baeedf]" name="RemoveFromWishlist" duration-ms="161" started-at="2018-06-28T13:09:49Z" finished-at="2018-06-28T13:09:49Z">
+        <test-method status="PASS" signature="RemoveFromWishlist()[pri:8, instance:MavenTest.NewTest@57baeedf]" name="RemoveFromWishlist" duration-ms="112" started-at="2018-06-29T15:55:34Z" finished-at="2018-06-29T15:55:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveFromWishlist -->
-        <test-method status="PASS" signature="AddToCompare()[pri:9, instance:MavenTest.NewTest@57baeedf]" name="AddToCompare" duration-ms="7197" started-at="2018-06-28T13:09:49Z" finished-at="2018-06-28T13:09:56Z">
+        <test-method status="PASS" signature="AddToCompare()[pri:9, instance:MavenTest.NewTest@57baeedf]" name="AddToCompare" duration-ms="8858" started-at="2018-06-29T15:55:34Z" finished-at="2018-06-29T15:55:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddToCompare -->
-        <test-method status="PASS" signature="CheckCompare()[pri:10, instance:MavenTest.NewTest@57baeedf]" name="CheckCompare" duration-ms="15403" started-at="2018-06-28T13:09:56Z" finished-at="2018-06-28T13:10:11Z">
+        <test-method status="PASS" signature="CheckCompare()[pri:10, instance:MavenTest.NewTest@57baeedf]" name="CheckCompare" duration-ms="22560" started-at="2018-06-29T15:55:43Z" finished-at="2018-06-29T15:56:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckCompare -->
-        <test-method status="PASS" signature="CheckMyAccount()[pri:11, instance:MavenTest.NewTest@57baeedf]" name="CheckMyAccount" duration-ms="3579" started-at="2018-06-28T13:10:11Z" finished-at="2018-06-28T13:10:15Z">
+        <test-method status="PASS" signature="CheckMyAccount()[pri:11, instance:MavenTest.NewTest@57baeedf]" name="CheckMyAccount" duration-ms="3523" started-at="2018-06-29T15:56:05Z" finished-at="2018-06-29T15:56:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckMyAccount -->
-        <test-method status="PASS" signature="RemoveFromCompare()[pri:12, instance:MavenTest.NewTest@57baeedf]" name="RemoveFromCompare" duration-ms="165" started-at="2018-06-28T13:10:15Z" finished-at="2018-06-28T13:10:15Z">
+        <test-method status="PASS" signature="RemoveFromCompare()[pri:12, instance:MavenTest.NewTest@57baeedf]" name="RemoveFromCompare" duration-ms="299" started-at="2018-06-29T15:56:09Z" finished-at="2018-06-29T15:56:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveFromCompare -->
-        <test-method status="PASS" signature="LogOut()[pri:13, instance:MavenTest.NewTest@57baeedf]" name="LogOut" duration-ms="3578" started-at="2018-06-28T13:10:15Z" finished-at="2018-06-28T13:10:19Z">
+        <test-method status="PASS" signature="LogOut()[pri:13, instance:MavenTest.NewTest@57baeedf]" name="LogOut" duration-ms="3551" started-at="2018-06-29T15:56:09Z" finished-at="2018-06-29T15:56:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOut -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:MavenTest.NewTest@57baeedf]" name="afterTest" is-config="true" duration-ms="879" started-at="2018-06-28T13:10:19Z" finished-at="2018-06-28T13:10:20Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:MavenTest.NewTest@57baeedf]" name="afterTest" is-config="true" duration-ms="860" started-at="2018-06-29T15:56:13Z" finished-at="2018-06-29T15:56:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

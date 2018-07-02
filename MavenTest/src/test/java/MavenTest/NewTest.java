@@ -2,15 +2,11 @@ package MavenTest;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 
 public class NewTest {
@@ -48,7 +44,7 @@ public class NewTest {
 	@Test(priority = 5)
 	public void AddProductInCart() {
 		System.out.println("Add Product In Cart");
-		driver.findElement(By.xpath("//html[@id='top']/body/div/div[2]/div[2]/div/div[2]/div[2]/div[2]/ul/li/div/div[2]/button/span/span")).click();
+		driver.findElement(By.xpath("//*[@class='button btn-cart']")).click();
 	}
 	@Test(priority = 6)
 	public void RemoveProductFromCart() {
@@ -84,14 +80,16 @@ public class NewTest {
 
 		for (String winHandle : driver.getWindowHandles()) {
 			Thread.sleep(5000);
-		    driver.switchTo().window(winHandle); // switch focus of WebDriver to the next found window handle (that's your newly opened window)
+			// switch focus of WebDriver to the next found window handle (that's your newly opened window)
+			driver.switchTo().window(winHandle); 
 		}
-
 		//code to do something on new window
-
+		driver.findElement(By.xpath("//a[@class='link-wishlist']")).click();
+		driver.findElement(By.xpath("//a[@title='Remove Item']")).click();
+		Thread.sleep(2000);
 		driver.close(); // close newly opened window when done with it
 		driver.switchTo().window(parentHandle); // switch back to the original window
-		}
+	}
 	@Test(priority = 11)
 	public void CheckMyAccount() throws Exception {
 		System.out.println("Check My Account");
@@ -124,5 +122,4 @@ public class NewTest {
 		System.out.println("Close Browser");
 		driver.quit();
 	}
-
 }
